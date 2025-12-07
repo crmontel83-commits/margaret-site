@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home | Margaret Feuerman</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Landing page for fantasy author Margaret Feuerman, creator of Keeper of the Gate and House Sonnenberg." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-name">Margaret Feuerman</span>
+          <span class="brand-tagline">Fantasy Author</span>
+        </div>
+
+        <nav class="main-nav">
+          <a href="home.html">Home</a>
+          <a href="index.html#books">Books</a>
+
+          <div class="nav-dropdown">
+            <span class="nav-link">Worldbuilding ▾</span>
+            <div class="dropdown-menu">
+              <a href="worldbuilding.html">Worldbuilding Hub</a>
+              <a href="house-sonnenberg.html">House Sonnenberg</a>
+              <a href="lady-earth.html">Lady of Earth</a>
+              <a href="lady-light.html">Lady of Light</a>
+              <a href="lady-air.html">Lady of Air</a>
+              <a href="lady-water.html">Lady of Water</a>
+              <a href="lady-dreams.html">Lady of Dreams</a>
+            </div>
+          </div>
+
+          <a href="dnd.html">Play in the World (5e)</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#newsletter">Newsletter</a>
+          <a href="index.html#contact">Contact</a>
+
+          <a href="https://lightwellwebdesigns.com"
+             class="btn nav-like"
+             target="_blank"
+             rel="noopener">
+            Like my site?
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO LANDING -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-kicker">House Sonnenberg • Epic Fantasy</p>
+          <h1>Stories to read by starlight.<br />Monsters to face at your table.</h1>
+          <p class="hero-sub">
+            Welcome to the world of <strong>Keeper of the Gate</strong>—where Houses rise,
+            the Five Ladies watch, and a shattered Gate spills monsters into the dark.
+          </p>
+          <div class="hero-buttons">
+            <a href="index.html#books" class="btn btn-primary">Read Keeper of the Gate</a>
+            <a href="dnd.html" class="btn btn-outline">Play in the World (DnD 5e)</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/keeper-mockup-stack-phone.jpg"
+               alt="Keeper of the Gate book and phone mockup by Margaret Feuerman" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-main">
+          <p>&copy; <span id="year"></span> Margaret Feuerman. All rights reserved.</p>
+          <p class="footer-small">
+            Keeper of the Gate &amp; related characters and locations are trademarks of Margaret Feuerman.
+          </p>
+        </div>
+        <div class="footer-credits">
+          <a href="https://lightwellwebdesigns.com"
+             class="btn-footer-brand"
+             target="_blank"
+             rel="noopener">
+            SITE BY LIGHTWELL WEB DESIGNS
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
