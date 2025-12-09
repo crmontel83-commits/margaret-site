@@ -21,7 +21,7 @@
 
         <nav class="main-nav">
           <a href="home.html">Home</a>
-          <a href="index.html#books">Books</a>
+          <a href="books.html">Books</a>
 
           <div class="nav-dropdown">
             <span class="nav-link">Worldbuilding ▾</span>
@@ -51,7 +51,7 @@
       </div>
     </header>
 
-    <!-- BOOKS -->
+    <!-- BOOKS SECTION -->
     <section id="books" class="section section-dark">
       <div class="container two-column">
         <div class="section-image">
@@ -59,8 +59,8 @@
                alt="Keeper of the Gate hardcover on a wooden table" />
         </div>
         <div class="section-text">
-          <h2>Keeper of the Gate</h2>
-          <p class="eyebrow">Book One • House Sonnenberg</p>
+          <h2>Keeper of the Gate: Book One</h2>
+          <p class="eyebrow">Epic Fantasy • Froth &amp; Fire</p>
 
           <p><em>Be strong. Be deadly. Be the Queen who brings your people home.</em></p>
 
@@ -93,13 +93,17 @@
                rel="noopener">
               Buy on Amazon
             </a>
-            <a href="#" class="btn btn-outline">Read a Sample</a>
+            <a href="downloads/keeper-of-the-gate-excerpt.pdf"
+               class="btn btn-outline"
+               download>
+              Read a Free Excerpt (PDF)
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WORLD OF HOUSE SONNENBERG (uses your ring/Froth background) -->
+    <!-- WORLD OF HOUSE SONNENBERG -->
     <section id="world" class="section section-world-sonnenberg">
       <div class="container">
         <h2>The World of House Sonnenberg</h2>
@@ -187,7 +191,7 @@
             rolling dice at the gaming table.
           </p>
           <p>
-            <em>Keeper of the Gate</em> is the first novel set in the world of House Sonnenberg,
+            <em>Keeper of the Gate: Book One</em> is the first novel set in the world of House Sonnenberg,
             the Five Ladies, and the poisoned frontier beyond the Froth.
           </p>
         </div>
@@ -204,7 +208,7 @@
             Get bonus chapters, early monster releases, and behind-the-scenes lore from House Sonnenberg.
           </p>
 
-          <!-- Replace this with your real provider embed (MailerLite, etc.) -->
+          <!-- Replace with real provider embed -->
           <form class="newsletter-form">
             <div class="form-row">
               <label for="name">Name</label>
@@ -256,18 +260,23 @@
         <p class="section-intro">
           Want to talk about the books, request an interview, or share actual-play stories from your table?
         </p>
-        <form class="contact-form">
+
+        <!-- Replace YOUR_EMAIL_HERE with Margaret's email -->
+        <form class="contact-form"
+              action="mailto:YOUR_EMAIL_HERE"
+              method="POST"
+              enctype="text/plain">
           <div class="form-row">
             <label for="contact-name">Name</label>
-            <input id="contact-name" type="text" required />
+            <input id="contact-name" name="name" type="text" required />
           </div>
           <div class="form-row">
             <label for="contact-email">Email</label>
-            <input id="contact-email" type="email" required />
+            <input id="contact-email" name="email" type="email" required />
           </div>
           <div class="form-row">
             <label for="contact-message">Message</label>
-            <textarea id="contact-message" rows="5" required></textarea>
+            <textarea id="contact-message" name="message" rows="5" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Send message</button>
         </form>
@@ -283,6 +292,23 @@
             Keeper of the Gate &amp; related characters and locations are trademarks of Margaret Feuerman.
           </p>
         </div>
+
+        <div class="footer-social">
+          <span>Follow Margaret:</span>
+          <a href="https://www.facebook.com/margaret.feuerman"
+             class="social-link"
+             target="_blank"
+             rel="noopener">
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/margaret_feuerman_author/"
+             class="social-link"
+             target="_blank"
+             rel="noopener">
+            Instagram
+          </a>
+        </div>
+
         <div class="footer-credits">
           <a href="https://lightwellwebdesigns.com"
              class="btn-footer-brand"

@@ -4,7 +4,7 @@
   --green-soft: #165f3b;
   --gold: #f3c553;
   --accent-aqua: #7cd9b8;
-  --accent-violet: #a58bff;
+  --accent-violet: #22c55e; /* re-used as a green accent instead of purple */
   --bg-deep: #020a06;
   --bg-light: #f6f3ea;
   --text-light: #f9fafb;
@@ -28,6 +28,32 @@ body {
   background-color: var(--bg-deep);
   color: var(--text-light);
   line-height: 1.6;
+}
+
+/* Global link styles (remove default blue/purple) */
+a {
+  color: var(--green-main);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--green-main);
+}
+
+.section-dark a,
+.hero a,
+.section-world-sonnenberg a,
+.section-froth a,
+.site-footer a {
+  color: var(--gold);
+}
+
+.section-dark a:visited,
+.hero a:visited,
+.section-world-sonnenberg a:visited,
+.section-froth a:visited,
+.site-footer a:visited {
+  color: var(--gold);
 }
 
 img {
@@ -360,6 +386,14 @@ img {
   background: #ffffff;
 }
 
+/* generic wrapper for button rows in sections */
+.section-buttons {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 /* HEADINGS */
 
 h2 {
@@ -543,6 +577,24 @@ h3 {
 /* WORLDBUILDING HUB PAGE BACKGROUND */
 
 .worldbuilding-hub {
+  /* Shattering Orbs section – soft gold/green prophecy feel */
+.section-shattering-orbs {
+  background: radial-gradient(circle at top, #fef3c7, #dcfce7);
+  color: var(--text-dark);
+}
+
+.section-shattering-orbs h2 {
+  color: #14532d; /* deep green title */
+}
+
+.section-shattering-orbs .section-intro {
+  color: #374151;
+}
+
+.section-shattering-orbs .placeholder {
+  color: #4b5563;
+}
+
   background: linear-gradient(135deg, #ecfdf3, #bbf7d0);
   color: var(--text-dark);
 }
@@ -757,6 +809,49 @@ textarea {
 .footer-small {
   margin-top: 0.4rem;
 }
+
+/* Social row + pill buttons */
+
+/* Social row + pill buttons */
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.footer-social span {
+  opacity: 0.9;
+}
+
+.social-link {
+  text-decoration: none;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(52, 211, 153, 0.55); /* softer border */
+  color: #e5e7eb;                              /* soft light gray, not harsh white */
+  background: rgba(5, 24, 17, 0.96);           /* deep, calmer green */
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition:
+    background 0.12s ease-out,
+    color 0.12s ease-out,
+    transform 0.12s ease-out,
+    box-shadow 0.12s ease-out;
+}
+
+.social-link:hover {
+  background: rgba(16, 56, 40, 1);            /* a bit brighter on hover */
+  color: #f9fafb;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45);
+}
+
+/* Lightwell badge */
 
 .footer-credits {
   display: flex;
