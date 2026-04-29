@@ -914,7 +914,61 @@ textarea {
   .two-column.reverse {
     grid-template-columns: minmax(0, 1fr);
   }
+/* Cleaner pill button sizing */
+.btn,
+.nav-like,
+.social-link,
+.btn-footer-brand {
+  line-height: 1.2;
+  white-space: nowrap;
+  text-align: center;
+}
 
+/* Top nav Lightwell button */
+.nav-like {
+  padding: 0.42rem 0.85rem;
+  font-size: 0.78rem;
+  flex-shrink: 0;
+}
+
+/* Footer social pills */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0.32rem 0.85rem;
+  font-size: 0.72rem;
+}
+
+/* Lightwell footer badge */
+.btn-footer-brand {
+  max-width: 100%;
+  min-height: 32px;
+  padding: 0.38rem 0.9rem;
+  font-size: 0.68rem;
+}
+
+/* Give nav more breathing room on smaller screens */
+@media (max-width: 880px) {
+  .main-nav {
+    gap: 0.55rem 0.75rem;
+  }
+
+  .main-nav > a,
+  .nav-link {
+    font-size: 0.82rem;
+  }
+
+  .nav-like {
+    font-size: 0.72rem;
+    padding: 0.38rem 0.75rem;
+  }
+
+  .footer-social {
+    gap: 0.4rem;
+  }
+}
   .author-photo img {
     margin: 0 auto;
     max-width: 260px;
