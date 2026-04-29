@@ -980,3 +980,132 @@ textarea {
     max-width: 260px;
   }
 }
+/* Blessed Ladies horizontal layout */
+
+.ladies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+
+.lady-row {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: center;
+  padding: 1.4rem;
+  border-radius: var(--radius-card);
+  border: 1px solid rgba(20, 83, 45, 0.22);
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.15);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.lady-symbol-wrap {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(6, 35, 24, 0.08);
+  border: 1px solid rgba(20, 83, 45, 0.18);
+}
+
+.lady-symbol {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  display: block;
+}
+
+.lady-text h2 {
+  margin-bottom: 0.25rem;
+  color: #14532d;
+}
+
+.lady-text p {
+  color: #1f2937;
+}
+
+.lady-light {
+  background: linear-gradient(135deg, #fff7d6, #ecfdf3);
+}
+
+.lady-air {
+  background: linear-gradient(135deg, #f3f4f6, #ecfdf3);
+}
+
+.lady-earth {
+  background: linear-gradient(135deg, #dcfce7, #f7fee7);
+}
+
+.lady-water {
+  background: linear-gradient(135deg, #e0f7ff, #ecfdf3);
+}
+
+.lady-dreams {
+  background: linear-gradient(135deg, #f3e8ff, #ecfdf3);
+}
+
+.lady-souls {
+  background: linear-gradient(135deg, #e5e7eb, #fef3c7);
+}
+
+/* Fix pill buttons that wrap or sit weirdly */
+
+.btn,
+.nav-like,
+.social-link,
+.btn-footer-brand {
+  line-height: 1.2;
+  white-space: nowrap;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main-nav > a.nav-like {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.42rem 0.85rem;
+  font-size: 0.76rem;
+  flex-shrink: 0;
+}
+
+.main-nav > a.nav-like::after {
+  display: none;
+}
+
+.social-link,
+.social-link:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0.32rem 0.85rem;
+  font-size: 0.72rem;
+  color: #e5e7eb;
+  background: rgba(5, 24, 17, 0.96);
+  border-color: rgba(52, 211, 153, 0.55);
+}
+
+.btn-footer-brand,
+.btn-footer-brand:visited {
+  max-width: 100%;
+  min-height: 32px;
+  padding: 0.38rem 0.9rem;
+  font-size: 0.68rem;
+  color: rgba(209, 250, 229, 0.95);
+}
+
+@media (max-width: 700px) {
+  .lady-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .lady-symbol-wrap {
+    margin: 0 auto;
+  }
+}
