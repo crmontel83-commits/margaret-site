@@ -223,10 +223,15 @@
         </p>
 
         <!-- Replace YOUR_EMAIL_HERE with Margaret's real email address -->
-        <form class="contact-form"
-              action="mailto:YOUR_EMAIL_HERE"
-              method="POST"
-              enctype="text/plain">
+        <form
+    class="contact-form"
+    name="contact"
+    method="POST"
+    data-netlify="true">
+
+    <input type="hidden"
+           name="form-name"
+           value="contact">
 
           <div class="form-row">
             <label for="contact-name">Name</label>
