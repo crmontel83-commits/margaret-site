@@ -1221,3 +1221,72 @@ textarea {
 .lore-links a:hover{
     text-decoration:underline;
 }
+
+
+/*==============================
+BLESSED LADIES CONTENTS
+==============================*/
+
+.lady-contents{
+
+    max-width:700px;
+
+    margin:2rem auto 3rem;
+
+    padding:2rem;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+
+    text-align:center;
+
+}
+
+.lady-contents h2{
+
+    margin-top:0;
+
+}
+
+.lady-contents ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:1.5rem 0 0;
+
+}
+
+.lady-contents li{
+
+    margin:.8rem 0;
+
+}
+
+.lady-contents a{
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.back-top{
+
+    margin-top:1.5rem;
+
+    font-size:.9rem;
+
+}
+
+.back-top a{
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
