@@ -1201,3 +1201,23 @@ textarea {
     letter-spacing: 0.1em;
   }
 }
+
+
+.lore-links{
+    list-style:none;
+    margin:1rem 0 0;
+    padding:0;
+}
+
+.lore-links li{
+    margin:.45rem 0;
+}
+
+.lore-links a{
+    font-weight:600;
+    text-decoration:none;
+}
+
+.lore-links a:hover{
+    text-decoration:underline;
+}
