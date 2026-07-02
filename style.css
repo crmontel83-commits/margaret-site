@@ -1415,3 +1415,71 @@ CREATION MYTH
     text-align: center;
     margin-bottom: 1rem;
 }
+
+/* ===========================
+   BLESSED LADIES ACCORDION
+   =========================== */
+
+.lady-panel{
+    margin:1rem 0;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 24px rgba(0,0,0,.12);
+}
+
+.lady-panel summary{
+    cursor:pointer;
+    list-style:none;
+    padding:1.2rem 1.5rem;
+    font-size:1.2rem;
+    font-weight:700;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.lady-panel summary::-webkit-details-marker{
+    display:none;
+}
+
+.lady-panel summary::after{
+    content:"+";
+    font-size:1.6rem;
+    transition:.25s;
+}
+
+.lady-panel[open] summary::after{
+    content:"–";
+}
+
+.lady-panel .lady-row{
+    margin:0;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
+}
+
+.lady-light summary{
+    background:#f7d96b;
+}
+
+.lady-air summary{
+    background:#d5d8df;
+}
+
+.lady-earth summary{
+    background:#a7d96b;
+}
+
+.lady-water summary{
+    background:#7fd9ee;
+}
+
+.lady-dreams summary{
+    background:#cab3ff;
+}
+
+.lady-souls summary{
+    background:#18212d;
+    color:white;
+}
