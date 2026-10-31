@@ -913,40 +913,26 @@ transition:
 }
 
 .shattering-artwork {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.shattering-cover,
-.shattering-mockup {
-  min-width: 0;
+  max-width: 500px;
   margin: 0 auto;
 }
 
-.shattering-cover img,
-.shattering-mockup img {
+.shattering-cover {
   width: 100%;
-  border-radius: var(--radius-card);
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22);
+  max-width: 460px;
+  margin: 0 auto;
 }
 
 .shattering-cover img {
-  max-height: 390px;
+  display: block;
+  width: 100%;
+  max-height: 680px;
   object-fit: contain;
-}
-
-.shattering-mockup img {
-  max-height: 440px;
-  object-fit: contain;
-}
-
-.artwork-caption {
-  margin: 0.65rem 0 0;
-  color: #5b6470;
-  font-size: 0.78rem;
-  text-align: center;
+  border-radius: var(--radius-card);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.25);
 }
 
 .shattering-copy h3,
@@ -1010,18 +996,17 @@ transition:
   }
 
   .shattering-artwork {
-    grid-template-columns: minmax(0, 1fr);
+    max-width: 380px;
+  }
+
+  .shattering-cover {
     max-width: 360px;
-    margin: 0 auto;
   }
 
-  .shattering-cover,
-  .shattering-mockup {
-    width: 100%;
-    max-width: 320px;
+  .shattering-cover img {
+    max-height: 560px;
   }
-
-  .arc-promo {
+.arc-promo {
     padding: 1.25rem;
     margin-top: 3rem;
   }
